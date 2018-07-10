@@ -1,0 +1,413 @@
+@import "./variable"
+//重置vux组件样式
+.vux-cell-bd
+    .vux-label-desc
+        font-size 30px
+        color $color-theme
+
+.range-handle
+    background-color $color-theme!important
+
+.vux-range-input-box
+    margin-left 70px!important
+    margin-right 20px!important
+    .range-quantity
+        background-color $color-theme    
+    .range-handle
+        width 53px
+        height 53px
+    .range-min
+    .range-max
+        min-width 100px
+        color $color-white
+    .range-min
+        margin-left -50px
+    .range-max
+        margin-right -50px    
+.data-group
+    .vux-flexbox
+        .vux-flexbox-item
+            margin-left 0!important
+            margin-top 0!important
+            margin-bottom 0!important  
+
+.app-tab
+    &.vux-tab-warp
+        height 100px
+        font-size 28px
+        background-image url(@import '~common/images/bg_tab.png')
+        padding-top 0!important
+        background-size cover 
+        border-bottom none
+        .vux-tab-container
+            height 100px
+            border-bottom 1px solid transparent
+        .vux-tab
+            height 100px
+            background-color transparent 
+            border-bottom none
+            .vux-tab-item  
+                height 100px
+                line-height 100px
+                border-bottom none   
+                font-size 28px 
+                &.vux-tab-selected 
+                    color:$color-magic
+                    text-shadow: 0 0 10px $color-magic
+        .vux-tab-ink-bar
+            display none!important
+
+.mod-group
+    font-size 30px
+    .weui-cells
+        background-color $color-group-cell
+        &:before
+            border-top 1px solid $color-group-cell
+        &:after
+            border-bottom 1px solid $color-group-cell
+    .weui-cell
+        min-height 90px
+        .vux-label
+            color $color-white
+            margin-left 10px
+            font-size 30px
+        &:before
+            border-top 4px solid $color-cell-border
+            top -1px
+        &:active
+            background-color lighten($color-group-cell,10%)
+    .vux-cell-box
+        &:not(:first-child)
+            &:before
+                border-top 4px solid $color-cell-border
+    .vux-input-icon
+        &.weui-icon-warn
+        &.weui-icon-success
+            &:before
+                font-size 32px
+    .weui-cell_access
+        .weui-cell__hd
+            i
+                color $color-theme
+                margin-right 20px
+                margin-left 10px
+                font-size 34px
+            label
+                font-size 30px
+            .weui-label
+                font-size 30px
+        .vux-popup-picker-value
+            &.vux-cell-value
+                color $color-theme
+                font-size 30px
+        .weui-cell__ft
+            &:after
+                width 20px
+                height 20px
+                margin-top -10px
+                right 15px
+                border-color $color-theme
+            padding-right 50px
+            font-size 30px
+            color $color-theme
+            .vux-cell-value
+                color $color-theme
+    
+    .weui-cell__hd
+        i
+            color $color-theme
+            margin-right 20px
+            margin-left 10px
+            font-size 34px
+        label
+            font-size 30px
+        .weui-label
+            font-size 30px
+    
+    .vux-tap-active
+        .weui-label
+            padding-left 10px
+        .vux-cell-placeholder
+            font-size 28px
+            padding-left 18px
+            color #777
+    .weui-cell__bd
+        color $color-theme
+        input
+            font-size 30px
+            padding-left 18px
+            height auto
+            line-height normal
+    .weui-cell__ft
+        &:after
+            width 20px
+            height 20px
+            margin-top -10px
+            right 15px
+            border-color $color-theme
+            
+    .weui-icon-clear
+        font-size 30px
+    .vux-x-textarea
+        .weui-cell__bd
+            textarea
+                background-color $color-group-cell
+                font-size 30px
+                color $color-theme
+                padding-left 18px
+    .vux-datetime
+        color $color-white
+        font-size 30px
+        p
+            padding-left 10px
+        .vux-cell-value
+            color $color-theme
+.vux-popup-picker-container
+    .vux-popup-header
+        box-sizing content-box
+        padding 15px 0
+        font-size 30px
+        background-color $color-group-cell
+        .vux-popup-header-right
+            color $color-theme
+        &.vux-1px-b 
+            &:after
+                border-bottom 2px solid $color-theme
+    .vux-picker
+        background-color $color-group-cell
+        .scroller-item
+            color $color-white
+            font-size 26px
+        .scroller-mask
+            background-image linear-gradient(to bottom, rgba(0,0,0,0.95), rgba(0,0,0,0.6)), linear-gradient(to top, rgba(0,0,0,0.95), rgba(0,0,0,0.6))
+        .scroller-indicator
+            color $color-white
+            font-size 30px
+            background-image linear-gradient(to bottom,$color-theme,lighten(#000,0.6)), linear-gradient(to top,$color-theme,lighten(#000,0.6))
+    .scroller-content 
+        z-index:1
+
+.mod-check-icon
+    .vux-check-icon
+        .weui-icon
+            font-size 30px
+            &:before
+                color $color-theme
+        span
+            color $color-theme
+
+
+.dp-container
+    background-color $color-cell-border !important
+    color $color-white!important
+    .dp-header
+        background-color $color-group-cell
+        padding-top 15px
+        padding-bottom 15px
+        .dp-left
+            &.dp-item
+                &.vux-datetime-cancel
+                    font-size 30px
+        .dp-right
+            &.dp-item
+                &.vux-datetime-confirm
+                    color $color-theme
+                    font-size 30px
+    .scroller-item
+        color white
+        font-size 30px
+    .scroller-indicator
+        background-image none
+    .scroller-mask
+        color $color-white
+        font-size 30px
+        opacity 0.9
+        background-image linear-gradient(to bottom,lighten($color-cell-border,0.9),lighten($color-group-cell,0.6)), linear-gradient(to top,lighten($color-cell-border,0.9),lighten($color-group-cell,0.6))
+
+.v-transfer-dom
+    .vux-popup-dialog
+        background-color $color-cell-border !important
+    .demo3-slot
+        background-color $color-group-cell
+        padding 10px 20px
+        border-bottom 4px solid $color-cell-border
+        font-size 30px
+    .weui-cell
+        font-size 30px
+        &:before
+            border-top 4px solid lighten($color-group-cell,0.4)     
+        &:active
+            background-color lighten($color-group-cell,0.4)
+    .weui-cells_radio
+        .weui-check:checked
+            & +
+                .weui-icon-checked
+                    &:before
+                        color $color-theme
+                        font-size 30px
+
+
+.weui-msg
+    .weui-msg__icon-area
+        .weui-icon_msg
+        .weui-icon-success
+            font-size 2rem
+            color $color-theme
+        .weui-icon-warn
+            color $color-warn
+    .weui-msg__text-area
+        .weui-msg__title
+            font-size 30px
+        .weui-msg__desc
+            font-size 26px
+    .weui-msg__opr-area
+        .weui-btn
+            font-size 30px
+            padding-left 2rem
+            padding-right 2rem
+            &.weui-btn_primary
+                background-color $color-theme
+
+.vux-loadmore
+    &.weui-loadmore
+        font-size 30px
+        .weui-loading
+            width 30px
+            height 30px
+
+
+.weui-wepay-flow
+    font-size 28px
+    .weui-wepay-flow__li
+        width 0.5rem
+        height 0.5rem
+        .weui-wepay-flow__state
+            background-color $color-theme
+            width 0.5rem
+            height 0.5rem
+            line-height 0.5rem
+            border-radius 0.25rem
+        .weui-wepay-flow__title-bottom
+            top 0.6rem
+            color $color-white
+            font-size 26px
+    .weui-wepay-flow__process
+        background-color $color-theme
+    .weui-wepay-flow__info-top
+        background-color $color-theme
+        font-size 26px
+        border-radius 5px
+        bottom 0.35rem
+        &:after
+            border-color $color-theme transparent transparent transparent
+            border-width 0.2rem 0.15rem
+            bottom -0.35rem
+    [class^="weui-wepay-flow__info-"]
+        height 0.5rem
+        line-height 0.5rem
+
+.app-tabbar
+    .weui-tabbar__icon
+        sup
+            .vux-badge
+                width auto
+                text-align center
+                font-size 20px
+                height auto
+                line-height normal
+                border-radius 2rem
+                padding 2px 10px
+
+.detail-desc
+.mod-sticky
+    padding 20px
+    .vux-tab-warp
+        padding-top 72px
+        .vux-tab-container
+            height 72px
+            line-height 72px
+            .vux-tab
+                background-color transparent
+                height 72px
+                line-height 72px
+                .vux-tab-item
+                    height 72px
+                    line-height 72px
+                    color $color-white
+                    border-bottom 1px solid $color-theme
+                    font-size 28px
+                    &.vux-tab-selected
+                        color $color-theme
+                        border-bottom 1px solid $color-theme
+                .vux-tab-ink-bar
+                    background-color $color-theme
+
+.vux-cell-primary
+    &.vux-number-round
+        .vux-number-selector
+            padding 20px
+            border-radius 100px
+            border 2px solid $color-theme
+        .vux-number-selector-sub
+            svg
+                top -18px
+                left -16px
+                fill $color-theme
+        .vux-number-selector-plus
+            svg
+                position relative
+                top -19px
+                left -18px
+                fill $color-theme
+        .vux-number-input
+            height 40px
+            color $color-white
+            font-size 28px
+
+.vux-loadmore
+    &.weui-loadmore
+        &.weui-loadmore_line
+            margin 0.5rem auto
+            font-size 28px
+            width 30%
+            &:before
+            &:after
+                border-top 1px solid darken($color-white,90)
+            .weui-loadmore__tips
+                color darken($color-white,60)
+
+.banner 
+    .vux-slider
+        .vux-indicator
+            .vux-icon-dot
+                width 20px
+                height 20px
+                border-radius 50%
+                margin 10px
+                background-color rgba($color-home,0.2)
+                &.active
+                    background-color $color-home
+
+.color-theme
+    .vux-slider
+        .vux-indicator
+            .vux-icon-dot
+                width 15px
+                height 15px
+                border-radius 50%
+                margin 8px
+                background-color rgba($color-theme,0.2)
+                &.active
+                    background-color $color-theme
+
+.color-dimension
+    .vux-slider
+        .vux-indicator
+            .vux-icon-dot
+                width 15px
+                height 15px
+                border-radius 50%
+                margin 8px
+                background-color rgba($color-dimension,0.2)
+                &.active
+                    background-color $color-dimension
